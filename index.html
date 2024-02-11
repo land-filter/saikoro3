@@ -1,0 +1,28 @@
+<!-- 見えない部分 -->
+<html>
+<head>
+<script>
+
+function Saikoro() {
+
+	let saikoro = Math.floor( Math.random() * 6) +1;
+	document.getElementById("kekka").innerHTML = saikoro;
+        document.getElementById("sainome").src= saikoro + ".jpg";
+
+}
+
+</script>
+</head>
+<!-- ↓ここから見える部分↓ -->
+<body>
+
+<!-- ↓この下に入力してね！↓ -->
+
+<p><img id="sainome" src="1.jpg" width="50" height="50"></p>
+<p><button onclick="Saikoro();">　サイコロを振る　</button></p>
+<p id="kekka"></p>
+
+<!-- ここまで！ -->
+
+</body>
+</html>
